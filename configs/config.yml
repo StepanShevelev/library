@@ -1,0 +1,9 @@
+port: "8000"
+
+db:
+  username: "vasya"
+  host: "127.17.0.1"
+  port: "3306"
+  password: "password"
+  dbname: "mysql"
+  sslmode: "disable"

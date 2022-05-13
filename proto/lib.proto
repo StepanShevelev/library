@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package api;
+
+option go_package = "/proto";
+
+
+service LibInfo{
+  rpc BookInfo(LibRequest) returns (LibResponse){}
+  rpc AuthorInfo(LibRequest) returns (LibResponse){}
+}
+
+message LibRequest {
+  int64 id = 1;
+}
+
+message LibResponse {
+  string name = 1;
+}
